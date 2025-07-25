@@ -1,9 +1,9 @@
 from flwr.client import NumPyClient, ClientApp
-from model import Net
-from data import load_datasets
-from utils import get_parameters, set_parameters
-from train import train, test
-from config import DEVICE
+from src.model.model import Net
+from src.data.data import load_datasets
+from src.utils.utils import get_parameters, set_parameters
+from src.train.train import train, test
+from src.config.config import DEVICE
 from flwr.common import Context
 
 class FlowerClient(NumPyClient):
