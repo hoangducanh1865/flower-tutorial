@@ -43,5 +43,5 @@ def client_fn(context: Context):
     return FlowerClient(partition_id, net, trainloader, valloader).to_client()
 
 
-client = ClientApp(client_fn=client_fn)
+# client = ClientApp(client_fn=client_fn)
 

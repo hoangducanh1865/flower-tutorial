@@ -52,4 +52,4 @@ def server_fn(context: Context) -> ServerAppComponents:
     return ServerAppComponents(strategy=strategy, config=config)
 
 
-server = ServerApp(server_fn=server_fn)
+# server = ServerApp(server_fn=server_fn)
