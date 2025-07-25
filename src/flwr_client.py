@@ -1,5 +1,5 @@
 from flwr.client import NumPyClient, ClientApp
-from model import Net
+from model.model import Net
 from data import load_datasets
 from utils import get_parameters, set_parameters
 from train import train, test

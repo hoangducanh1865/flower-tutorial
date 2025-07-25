@@ -1,4 +1,4 @@
-from model import Net
+from model.model import Net
 from utils import get_parameters, set_parameters
 from data import load_datasets
 from config import DEVICE, NUM_PARTITIONS
