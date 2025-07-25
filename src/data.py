@@ -1,7 +1,7 @@
 from flwr_datasets import FederatedDataset
 from torchvision import transforms
 from torch.utils.data import DataLoader
-from .config import BATCH_SIZE
+from config import BATCH_SIZE
 
 
 def load_datasets(partition_id: int, num_partitions: int):

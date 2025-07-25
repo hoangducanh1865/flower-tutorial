@@ -1,5 +1,5 @@
 import torch
-from .config import DEVICE
+from config import DEVICE
 
 def train(net, trainloader, epochs: int, verbose=False):
     criterion = torch.nn.CrossEntropyLoss()
