@@ -14,15 +14,17 @@
 
 
 # main.py
-# WARNING: This only works for `flwr.simulation.start_simulation` (not actual distributed)
-from src.flwr_server import start_server
-from src.flwr_client import client_fn
 
 import flwr as fl
-from flwr.simulation import start_simulation
+from src.flwr_client import client_fn
+import sys
+import os
+
+# Fix import path in Kaggle if needed
+sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
 if __name__ == "__main__":
-    start_simulation(
+    fl.simulation.start_simulation(
         client_fn=client_fn,
         num_clients=10,
         config=fl.server.ServerConfig(num_rounds=3),
