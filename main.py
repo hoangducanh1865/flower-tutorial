@@ -3,11 +3,11 @@ from src.flwr_server import server
 from src.config import NUM_PARTITIONS, DEVICE
 from flwr.simulation import run_simulation
 
-import sys
-import os
+# import sys
+# import os
 
 
-sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
+# sys.path.append(os.path.join(os.path.dirname(__file__), "src"))
 
 backend_config = {"client_resources": {"num_cpus": 1, "num_gpus": 1.0}} if DEVICE == "cuda" else {"client_resources": None}
 
