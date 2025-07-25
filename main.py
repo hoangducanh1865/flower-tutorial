@@ -1,6 +1,6 @@
 from src.flwr_client import client
 from src.flwr_server import server
-from src.config import NUM_PARTITIONS, DEVICE
+from src.config.config import NUM_PARTITIONS, DEVICE
 from flwr.simulation import run_simulation
 
 # import sys

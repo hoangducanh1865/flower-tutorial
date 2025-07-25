@@ -1,8 +1,8 @@
-from model.model import Net
-from utils import get_parameters, set_parameters
-from data import load_datasets
-from config import DEVICE, NUM_PARTITIONS
-from train import train, test
+from src.model.model import Net
+from src.utils.utils import get_parameters, set_parameters
+from src.data.data import load_datasets
+from src.config.config import DEVICE, NUM_PARTITIONS
+from src.train.train import train, test
 from typing import Tuple, Dict, Optional
 from flwr.common import NDArrays, Scalar, Context, ndarrays_to_parameters
 from flwr.server import ServerApp, ServerAppComponents, ServerConfig
